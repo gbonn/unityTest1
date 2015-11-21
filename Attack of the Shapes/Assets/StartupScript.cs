@@ -1,0 +1,21 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class StartupScript : MonoBehaviour {
+	
+	public GameObject borderPrefab;
+	
+	// Use this for initialization
+	void Start () {
+		Debug.Log ("Hello!");
+		for (int numVertBorderElements = 0; numVertBorderElements < 4; numVertBorderElements++) {
+			Instantiate (borderPrefab, new Vector3 (-5, numVertBorderElements * 4, 0), Quaternion.identity);
+			Instantiate (borderPrefab, new Vector3 (15, numVertBorderElements * 4, 0), Quaternion.identity);
+		}
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
