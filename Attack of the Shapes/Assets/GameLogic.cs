@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StartupScript : MonoBehaviour {
+public class GameLogic : MonoBehaviour {
 	
 	public GameObject borderPrefab;
 	
@@ -16,6 +16,6 @@ public class StartupScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		//Debug.Log (System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
 	}
 }
