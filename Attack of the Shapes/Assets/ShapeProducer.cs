@@ -18,10 +18,14 @@ public class ShapeProducer : MonoBehaviour {
 	}
 
 	void SpawnShape() {
-		GameObject[] possibleShapes = new GameObject[] {fallingCubePrefab, fallingSpherePrefab, fallingCapsulePrefab};
+		GameObject[] possibleShapes = {fallingCubePrefab, fallingSpherePrefab, fallingCapsulePrefab};
+		string[] possibleShapeNames = {"CUBE", "SPHERE", "CAPSULE"};
 
 		float x = Random.Range(-2.0f, 8.0f);
-		GameObject newShape = (GameObject)Instantiate(possibleShapes[Random.Range(0, possibleShapes.Length)], new Vector3(x, 12, 0), Quaternion.identity);
+		int randShapeIdx = Random.Range (0, possibleShapes.Length);
+
+		GameObject newShape = (GameObject)Instantiate(possibleShapes[randShapeIdx], new Vector3(x, 12, 0), Quaternion.identity);
+		newShape.name = possibleShapeNames [randShapeIdx];
 		newShape.GetComponent<Renderer> ().material.SetColor("_EmissionColor", GetRandomColor());
 	}
 

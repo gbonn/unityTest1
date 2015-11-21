@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FallingShapeLogic : MonoBehaviour {
 
-	private static 
+	private static GameObject selectedShape = null;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +18,23 @@ public class FallingShapeLogic : MonoBehaviour {
 	void OnMouseDown()
 	{
 		Behaviour haloBehaviour = gameObject.GetComponent ("Halo") as Behaviour;
-		haloBehaviour.enabled = !haloBehaviour.enabled;
+
+		if (selectedShape == null) {
+			haloBehaviour.enabled = true;
+			selectedShape = gameObject;
+		} else {
+			if (selectedShape == gameObject) {
+				haloBehaviour.enabled = false;
+				selectedShape = null;
+			} else {
+				if ((selectedShape.GetComponent<Renderer> ().material.GetColor("_EmissionColor") == gameObject.GetComponent<Renderer> ().material.GetColor("_EmissionColor")) &&
+				    (selectedShape.name == gameObject.name)){
+					Destroy(selectedShape);
+					selectedShape = null;
+					Destroy(gameObject);
+				}
+
+			}
+		}
 	}
 }
