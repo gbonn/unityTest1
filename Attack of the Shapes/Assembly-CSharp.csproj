@@ -45,9 +45,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FallingShapeLogic.cs" />
-     <Compile Include="Assets\GameLogic.cs" />
-     <Compile Include="Assets\ShapeProducer.cs" />
+     <Compile Include="Assets\Scripts\FallingShapeLogic.cs" />
+     <Compile Include="Assets\Scripts\GameLogic.cs" />
+     <Compile Include="Assets\Scripts\ShapeProducer.cs" />
+     <Compile Include="Assets\Scripts\SliderTextBoxScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
