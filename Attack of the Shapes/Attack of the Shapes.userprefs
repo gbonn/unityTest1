@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SliderTextBoxScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameLogic.cs">
     <Files>
+      <File FileName="Assets\Scripts\GameLogic.cs" Line="20" Column="25" />
       <File FileName="Assets\Scripts\FallingShapeLogic.cs" Line="66" Column="55" />
-      <File FileName="Assets\Scripts\GameLogic.cs" Line="2" Column="51" />
-      <File FileName="Assets\Scripts\ShapeProducer.cs" Line="34" Column="53" />
-      <File FileName="Assets\Scripts\SliderTextBoxScript.cs" Line="21" Column="34" />
+      <File FileName="Assets\Scripts\ShapeProducer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SliderTextBoxScript.cs" Line="19" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
